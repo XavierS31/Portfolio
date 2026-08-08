@@ -118,27 +118,27 @@ function TrainerCard() {
   return <section className="mx-auto max-w-7xl px-4 pb-14 pt-5 sm:px-6 lg:px-8" aria-labelledby="hero-title">
     <div className="relative overflow-hidden border-4 border-slate-900 bg-slate-50 p-4 shadow-[8px_8px_0px_0px_#38405f] sm:p-6">
       <CornerBalls />
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b-4 border-slate-900 pb-4 font-pixel text-[10px]">
-        <span className="bg-amber-400 px-2 py-1.5">TRAINER ID // 00031</span><span>POKE-GEAR: ONLINE</span>
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b-4 border-slate-900 pb-4 font-pixel text-[18px]">
+        <span className="bg-amber-400 px-5 py-1.5">TRAINER ID // 00031</span><span>POKE-GEAR: ONLINE</span>
       </div>
       <div className="grid gap-7 lg:grid-cols-[minmax(290px,.85fr)_1.5fr]">
         <div className="space-y-5"><PixelAvatar /><PokemonParty /></div>
         <div className="flex flex-col justify-between">
           <div>
-            <p className="mb-3 font-pixel text-[10px] text-slate-600">CLASS: ENGINEERING TRAINER</p>
+            <p className="mb-3 font-pixel text-[10px] text-slate-600">CLASS: COMPUTER SCIENCE TRAINING</p>
             <h1 id="hero-title" className="font-pixel text-3xl leading-[1.35] text-slate-900 sm:text-4xl lg:text-5xl">XAVIER SOTO BARON</h1>
             <p className="mt-5 max-w-3xl border-l-4 border-slate-900 bg-purple-50 px-4 py-3 font-pixel text-sm leading-loose sm:text-base">Software Engineer  |  Embedded Systems  |  Quant Dev  |  AI Engineer</p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="border-4 border-slate-900 bg-sky-100 p-4"><p className="font-pixel text-[9px] text-slate-600">EDUCATION</p><p className="mt-2 font-body text-base font-bold">B.S. Computer Science<br />University of Central Florida</p></div>
-              <div className="border-4 border-slate-900 bg-emerald-400 p-4"><p className="font-pixel text-[9px]">NEXT MILESTONE</p><p className="mt-2 font-body text-base font-bold">Graduating<br />May 2027</p></div>
+              <div className="border-4 border-slate-900 bg-sky-100 p-4"><p className="font-pixel text-[11px] text-slate-600">EDUCATION</p><p className="mt-2 font-body text-base font-bold">B.S.  Computer Science<br />University of Central Florida</p></div>
+              <div className="border-4 border-slate-900 bg-emerald-400 p-4"><p className="font-pixel text-[11px]">NEXT MILESTONE</p><p className="mt-2 font-body text-base font-bold">Graduating<br />Spring 2027</p></div>
             </div>
-            <a className={`${hardButton} mt-3 inline-flex bg-slate-900 px-4 py-3 font-pixel text-[10px] text-slate-50`} href="/Xavier-Soto-Baron-Resume.pdf" target="_blank" rel="noreferrer">VIEW RESUME</a>
+
           </div>
           <div className="mt-7 grid gap-3 sm:grid-cols-2">
             <ContactLink label="EMAIL" value="xaviersotoba31@gmail.com" href="mailto:xaviersotoba31@gmail.com" tint="bg-amber-400" />
             <ContactLink label="LINKEDIN" value="linkedin.com/in/xavier-soto-baron" href="https://linkedin.com/in/xavier-soto-baron" tint="bg-cyan-400" />
             <ContactLink label="GITHUB" value="github.com/XavierS31" href="https://github.com/XavierS31" tint="bg-emerald-400" />
-            <ContactLink label="PHONE" value="689-348-1796" href="tel:+16893481796" tint="bg-purple-300" />
+            <ContactLink label="RESUME" value="View Resume" href="/Xavier-Soto-Baron-Resume.pdf" target="_blank" rel="noreferrer" tint="bg-purple-300" />
           </div>
         </div>
       </div>
@@ -150,7 +150,7 @@ function SectionTitle({ children, kicker }) { return <div className="section-tit
 
 function Profile() {
   return <section id="profile" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><SectionTitle kicker="[SECTION 01]">TRAINER SUMMARY</SectionTitle><div className="grid gap-6 lg:grid-cols-2">
-    <article className="border-4 border-slate-900 bg-slate-50 p-5 shadow-[6px_6px_0px_0px_#0f172a] sm:p-7"><h3 className="font-pixel text-base leading-loose">WHAT IS XAVIER SOTO?</h3><p className="mt-5 font-body text-base leading-7">A multi-disciplinary builder working at the intersection of full-stack development, multi-agent AI orchestration, embedded hardware and firmware, and low-latency algorithmic logic. Xavier turns complex systems into practical tools, whether that means coordinating autonomous agents, shipping polished web products, or optimizing the software that talks directly to hardware.</p><div className="mt-6 grid grid-cols-2 gap-3 font-pixel text-[9px]"><span className="border-2 border-slate-900 bg-cyan-400 p-2">FULL STACK</span><span className="border-2 border-slate-900 bg-purple-300 p-2">AGENTIC AI</span><span className="border-2 border-slate-900 bg-amber-400 p-2">EMBEDDED</span><span className="border-2 border-slate-900 bg-emerald-400 p-2">QUANT LOGIC</span></div></article>
+    <article className="border-4 border-slate-900 bg-slate-50 p-5 shadow-[6px_6px_0px_0px_#0f172a] sm:p-7"><h3 className="font-pixel text-base leading-loose">WHO IS XAVIER SOTO?</h3><p className="mt-5 font-body text-base leading-7">A multi-disciplinary builder working at the intersection of full-stack development, multi-agent AI orchestration, embedded hardware and firmware, and low-latency algorithmic logic. Xavier turns complex systems into practical tools, whether that means coordinating autonomous agents, shipping polished web products, or optimizing the software that talks directly to hardware.</p><div className="mt-6 grid grid-cols-2 gap-3 font-pixel text-[14px]"><span className="border-2 border-slate-900 bg-cyan-400 p-2">FULL STACK</span><span className="border-2 border-slate-900 bg-purple-300 p-2">AGENTIC AI</span><span className="border-2 border-slate-900 bg-amber-400 p-2">EMBEDDED</span><span className="border-2 border-slate-900 bg-emerald-400 p-2">QUANT DEV</span></div></article>
     <article className="border-4 border-slate-900 bg-slate-100 p-5 shadow-[6px_6px_0px_0px_#0f172a] sm:p-7"><h3 className="font-pixel text-base leading-loose">KEY METRICS & ACCOMPLISHMENTS</h3><div className="mt-5 border-4 border-slate-900 bg-amber-400 p-4"><p className="font-pixel text-lg">LEVEL UP!</p><p className="mt-2 font-body font-bold">XP gained through mentorship, leadership, and high-speed prototyping.</p></div><ul className="mt-5 space-y-4 font-body text-base leading-6"><li className="border-l-4 border-cyan-400 pl-3"><strong>UCF Teaching Assistant:</strong> Mentoring 200+ students in Data Structures, Algorithms & OOP (C/Java).</li><li className="border-l-4 border-purple-300 pl-3"><strong>Tau Beta Pi:</strong> Graduate Student Admissions Operations.</li><li className="border-l-4 border-rose-400 pl-3"><strong>Hackathon Champion:</strong> Innovation builder for fast-moving, full-stack teams.</li></ul></article>
   </div></section>
 }
