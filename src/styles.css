@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Silkscreen:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: "Pixelify Sans", "Silkscreen", monospace;
+  --font-body: "Trebuchet MS", "Aptos", ui-sans-serif, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+.pixel-art { image-rendering: pixelated; image-rendering: crisp-edges; filter: drop-shadow(2px 2px 0 #38405f); }
+.sprite-charizard { filter: none; }
+.font-body { letter-spacing: .012em; }
+
+/* Soft Game Boy Color palette: strong enough for pixel-type readability. */
+main .border-slate-900 { border-color: #38405f !important; }
+main .text-slate-900 { color: #222b45 !important; }
+main .text-slate-600 { color: #505775 !important; }
+main .text-slate-300 { color: #dfe4f0 !important; }
+main .bg-slate-900 { background-color: #38405f !important; }
+main .bg-slate-800 { background-color: #4b5375 !important; }
+main .bg-slate-50 { background-color: #fffefa !important; }
+main .bg-slate-100 { background-color: #f7f4ee !important; }
+main .bg-sky-100, main .bg-cyan-300, main .bg-cyan-400 { background-color: #c8e7f6 !important; }
+main .bg-amber-400 { background-color: #f7e7a7 !important; }
+main .bg-emerald-400 { background-color: #bfe6d0 !important; }
+main .bg-purple-300 { background-color: #d9cff1 !important; }
+main .bg-rose-400 { background-color: #f3c6d0 !important; }
+main .text-amber-400, main .text-amber-500 { color: #c28b2c !important; }
+main [class*="shadow-["] { box-shadow: 5px 5px 0 #38405f !important; }
+main [class*="shadow-["]:active { box-shadow: none !important; }
+
+.pixel-grid {
+  background-image: linear-gradient(rgba(56, 64, 95, .18) 2px, transparent 2px), linear-gradient(90deg, rgba(56, 64, 95, .18) 2px, transparent 2px);
+  background-size: 18px 18px;
+}
+
+.pokedex-orb {
+  width: 56px; height: 56px; border: 4px solid #38405f; border-radius: 999px;
+  background: linear-gradient(to bottom, #f3c6d0 0 46%, #38405f 46% 54%, #fffefa 54%);
+  position: relative; box-shadow: 3px 3px 0 #38405f;
+}
+.pokedex-orb::after { content: ''; position: absolute; width: 13px; height: 13px; background: #fffefa; border: 3px solid #38405f; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+/* Original CSS pixel scene: a muted Manhattan silhouette keeps the page atmospheric without competing with copy. */
+.city-main { background: #101936; isolation: isolate; }
+.pixel-skyline { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; background: linear-gradient(#101936 0 63%, #172650 63% 76%, #0e1732 76%); }
+.pixel-skyline::before { content: ''; position: absolute; inset: 0; opacity: .28; background-image: linear-gradient(90deg, transparent 0 49.8%, rgba(197, 215, 255, .08) 50% 50.2%, transparent 50.4%), linear-gradient(rgba(197, 215, 255, .06) 1px, transparent 1px); background-size: 52px 52px; }
+.pixel-moon { position: absolute; top: 11vh; right: 12vw; width: 58px; height: 58px; background: #d9cff1; box-shadow: 6px 6px 0 rgba(217, 207, 241, .18); }
+.pixel-stars { position: absolute; inset: 0; background-image: radial-gradient(circle, #f7e7a7 0 2px, transparent 2.5px), radial-gradient(circle, #d9cff1 0 1px, transparent 1.5px); background-position: 7vw 12vh, 31vw 22vh; background-size: 168px 132px, 246px 180px; opacity: .8; }
+.skyline-shore { position: absolute; bottom: 0; left: 50%; z-index: 1; display: flex; align-items: end; width: max(100%, 980px); height: 54vh; transform: translateX(-50%); opacity: .92; }
+.skyline-shore::after { content: ''; position: absolute; right: 0; bottom: 4px; left: 0; height: 13px; background: #0b1027; box-shadow: 0 -7px 0 #253868; }
+.skyline-building { position: relative; display: block; flex: none; border: 4px solid #0b1027; border-bottom: 0; background-color: #263a70; background-image: repeating-linear-gradient(90deg, transparent 0 13px, #f7e7a7 13px 17px, transparent 17px 29px), repeating-linear-gradient(0deg, transparent 0 15px, #c8e7f6 15px 19px, transparent 19px 31px); box-shadow: inset 5px 0 0 #16264f; }
+.skyline-building::after { content: ''; position: absolute; top: -4px; right: -4px; left: -4px; height: 8px; background: #0b1027; }
+.b1 { width: 9%; height: 65%; }.b2 { width: 8%; height: 81%; background-color: #30497d; }.b3 { width: 11%; height: 72%; }.b4 { width: 8%; height: 82%; background-color: #213665; }
+.b5 { width: 9%; height: 91%; background-color: #354f86; }.empire-state::before { content: ''; position: absolute; top: -102px; left: 50%; width: 9px; height: 102px; transform: translateX(-50%); background: #d9cff1; box-shadow: 0 0 0 3px #0b1027; }
+.empire-state::after { top: -18px; right: 17%; left: 17%; height: 19px; }
+.b6 { width: 8%; height: 84%; background-color: #2c477b; }.chrysler-building::before { content: ''; position: absolute; top: -76px; right: -4px; left: -4px; height: 80px; border: 4px solid #0b1027; border-bottom: 0; background: repeating-linear-gradient(90deg, #c8e7f6 0 5px, #2c477b 5px 10px); clip-path: polygon(50% 0, 61% 18%, 74% 32%, 84% 57%, 100% 100%, 0 100%, 16% 57%, 26% 32%, 39% 18%); }
+.chrysler-building::after { top: -96px; right: 45%; left: 45%; height: 22px; background: #d9cff1; }
+.b7 { width: 13%; height: 74%; background-color: #213665; }.b8 { width: 7%; height: 70%; background-color: #30497d; }.one-world-trade::before { content: ''; position: absolute; top: -160px; right: -4px; left: -4px; height: 164px; border: 4px solid #0b1027; border-bottom: 0; background-color: #30497d; background-image: repeating-linear-gradient(90deg, transparent 0 11px, #c8e7f6 11px 14px, transparent 14px 23px), repeating-linear-gradient(0deg, transparent 0 13px, #f7e7a7 13px 16px, transparent 16px 26px); clip-path: polygon(37% 0, 63% 0, 100% 100%, 0 100%); }.one-world-trade::after { top: -214px; right: 47%; left: 47%; height: 54px; background: #d9cff1; }
+.b9 { width: 10%; height: 67%; }.b10 { width: 9%; height: 83%; background-color: #354f86; }.b11 { width: 8%; height: 61%; }.b12 { width: 2%; height: 62%; background-color: #536785; }.b13 { width: 2%; height: 69%; background-color: #2c477b; }.b14 { width: 2%; height: 58%; background-color: #354f86; }.b15 { width: 2%; height: 72%; background-color: #536785; }.b16 { width: 2%; height: 64%; background-color: #2c477b; }
+.chrysler-building { width: 9%; height: 79%; background-color: #536785; }.one-world-trade { width: 11%; height: 60; background-color: #315789; }.empire-state { width: 10%; height: 90%; background-color: #465d83; }
+.one-world-trade { width: 10%; height: 70%; }
+.one-world-trade::before { top: -220px; height: 220px; }
+.one-world-trade::after { top: -278px; height: 62px; }
+.empire-state { height: 130%; }
+.empire-state::before { top: -84px; height: 84px; }
+.empire-state::after { top: -14px; height: 15px; }
+.pixel-street { position: absolute; right: 0; bottom: 16px; left: 0; z-index: 2; height: 34px; border-top: 4px solid #c8e7f6; border-bottom: 5px solid #0b1027; background: repeating-linear-gradient(90deg, #253868 0 34px, #172650 34px 68px); opacity: .9; }
+.pixel-street::before { content: ''; position: absolute; top: 10px; right: 0; left: 0; height: 3px; background: repeating-linear-gradient(90deg, #d9cff1 0 17px, transparent 17px 36px); }
+.pixel-car { position: absolute; bottom: 5px; display: block; width: 22px; height: 9px; border: 2px solid #0b1027; box-shadow: 3px 0 0 #0b1027; }
+.pixel-car::after { content: ''; position: absolute; top: 1px; right: -5px; width: 4px; height: 3px; background: #f7e7a7; box-shadow: -24px 0 0 #f3c6d0; }.pixel-car-red { left: 17%; background: #ce687b; }.pixel-car-yellow { left: 54%; background: #f7e7a7; }.pixel-car-blue { left: 81%; background: #6b93c8; }
+.section-title { width: fit-content; max-width: 100%; padding: .8rem 1rem; border: 3px solid #38405f; background: #fffefa; box-shadow: 4px 4px 0 #38405f; }
+
+.pixel-ball { --ball-top: #d65572; position: absolute; z-index: 0; display: block; width: 36px; height: 36px; border: 3px solid #38405f; border-radius: 999px; opacity: .24; background: linear-gradient(to bottom, var(--ball-top) 0 42%, #38405f 42% 57%, #fffefa 57%); box-shadow: 3px 3px 0 rgba(56, 64, 95, .28); pointer-events: none; }
+.pixel-ball::after { content: ''; position: absolute; top: 50%; left: 50%; width: 11px; height: 11px; border: 3px solid #38405f; border-radius: 999px; background: #fffefa; transform: translate(-50%, -50%); }
+.pixel-ball-master { --ball-top: #9d6ab6; background-image: linear-gradient(135deg, transparent 34%, #f7e7a7 35% 42%, transparent 43%), linear-gradient(225deg, transparent 34%, #f7e7a7 35% 42%, transparent 43%), linear-gradient(to bottom, var(--ball-top) 0 42%, #38405f 42% 57%, #fffefa 57%); }
+.pixel-ball-great { --ball-top: #4f85c9; }
+.pixel-ball-ultra { --ball-top: #40445e; background-image: linear-gradient(63deg, transparent 35%, #f7e7a7 36% 43%, transparent 44%), linear-gradient(117deg, transparent 35%, #f7e7a7 36% 43%, transparent 44%), linear-gradient(to bottom, var(--ball-top) 0 42%, #38405f 42% 57%, #fffefa 57%); }
+.ball-corner-top-right { top: 12px; right: 12px; }.ball-corner-bottom-left { bottom: 12px; left: 12px; }.ball-corner-bottom-right { right: 12px; bottom: 12px; }
+
+@media (max-width: 640px) {
+  .pixel-moon { top: 12vh; right: 9vw; width: 40px; height: 40px; }
+  .skyline-shore { height: 40vh; }
+  .section-title { padding: .65rem .75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
