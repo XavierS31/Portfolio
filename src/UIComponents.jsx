@@ -1,12 +1,10 @@
-import greninja from './assets/greninja.png'
-
 export function PokeballMark() {
   return <span className="course-pokeball" aria-hidden="true"><i /></span>
 }
 
-export function PokedexSprite({ entryName }) {
+export function PokedexSprite({ entryName, sprite, spriteName, spriteClass = '' }) {
   return <figure className="course-sprite-frame">
-    <img className="pixel-art course-greninja" src={greninja} alt={`Pixel-art Greninja mascot for ${entryName}`} />
+    <img className={`pixel-art course-greninja ${spriteClass}`} src={sprite} alt={`Pixel-art ${spriteName} mascot for ${entryName}`} />
   </figure>
 }
 
