@@ -4,11 +4,11 @@ import { RenderEngine } from './RenderEngine'
 import { experienceEntries } from './portfolioEntries'
 import { ExperienceMap, PokedexSprite, PokeballMark } from './UIComponents'
 import decidueye from './pokedex/decidueye-cutout.png'
-import gardevoir from './pokedex/gardevoir.png'
+import gardevoir from './pokedex/gardevoir-cutout.png'
 import lugia from './pokedex/lugia.png'
-import metagross from './pokedex/metagross.png'
-import rayquaza from './pokedex/rayquaza.png'
-import sceptile from './pokedex/sceptile.png'
+import metagross from './pokedex/metagross-cutout.png'
+import rayquaza from './pokedex/rayquaza-cutout.png'
+import sceptile from './pokedex/sceptile-cutout.png'
 
 const experienceSprites = [
   { src: sceptile, name: 'Sceptile' },
