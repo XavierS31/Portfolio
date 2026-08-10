@@ -3,13 +3,32 @@ import headshot from './assets/headshot.png'
 import umbreon from './assets/umbreon-clean-v2.png'
 import charizard from './assets/charizard.png'
 import greninja from './assets/greninja.png' // clean-v3
+import pokeballs from './assets/pokeballs.jpg'
+import badges from './assets/badges.jpg'
 import CoursePokedex from './CoursePokedex'
 import { courseCatalog } from './portfolioEntries'
 
 const projects = [
   {
+    title: 'POWERTRAIN',
+    category: ['EMBEDDED','AI & SYSTEMS'],
+    date: '1ST Place at UCF SHPE FALL 2026 Competition | August 2025 - November 2025',
+    types: ['EMBEDDED', 'HARDWARE','C++','ESP32', 'PYTHON','PYTORCH','PANDAS','SENSORS', 'SOLDERING'],
+    color: 'bg-emerald-400',
+    pictures: [],
+    githubUrl: 'https://github.com/XavierS31/PowerTrain-AI',
+    liveUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7401747250278039552/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_86EEBE4Qm2lxlEZ5YDFsyaVqGS-w7azc',
+    details: [
+      'Led a cross-functional team of 6 engineering students to develop a ESP32 RC autonomous car while implementing feedback, suggestions, and direct criticism from competition coordinators',
+      'Developed C and C++ firmware for real-time multi-sensor data acquisition, interfacing with peripherals and sensors via I2C and SPI to ensure data collection in a RTOS environment.',
+      'Engineered a custom Python neural network using PyTorch to categorize autonomous driving behaviors, resulting in reduced battery wear, which extended driving times by 2-3x with 90% accuracy.',
+      'Troubleshooted hardware–software integration of our custom schematics, using oscilloscopes and multimeters, resolvingcircuit stability and improving sensor data reading, which were reported to GitHub team’s repository.',
+    ],
+  },
+
+  {
     title: 'HERMES',
-    category: 'AI & SYSTEMS',
+    category: ['AI & SYSTEMS','FULL STACK'],
     date: '24-Hour Hackathon | March 2026',
     types: ['AI','Python','Flask','Gemini LLM','Google ADK', 'React','JavaScript', 'HTML', 'CSS',],
     color: 'bg-purple-300',
@@ -18,69 +37,91 @@ const projects = [
     githubUrl: 'https://github.com/XavierS31/hermes',
     liveUrl: null,
     details: [
-      'Engineered a hurricane simulation and evacuation testing platform for Tampa Bay using React and Python.',
-      'Built AI agent-to-agent orchestration with Gemini LLM and Google ADK to direct civilian evacuation.',
-      'Simulated 100+ autonomous AI civilian agents with custom behavioral logic via RESTful APIs.',
+      'Built an hurricane simulation and testing platform for Tampa Bay, FL using React, JavaScript, HTML, CSS to test AI capabilities in evacuation procedures withing a team of 3 people.',
+      'Engineered and AI agent to agent orchestration using Gemini LLM through Python, Flask, and Google ADK with the task of saving as many civilians from simulated custom hurricane scenarios.',
+      'Developed more than 100+ AI agents to simulate the civilians for the cities, acting with their own behaviors and receiving instructions from agentic orchestration through RESTful APIs.',
     ],
   },
+
+  {
+    title: 'SCUDERIA SHPE',
+    category: ['EMBEDDED','AI & SYSTEMS'],
+    date: '1ST AI Racer Grand Prix at UCF | January 2026 - April 2026',
+    types: ['Lidar','Embedded','Hardware','Raspberry Pi','C++','Linux', 'ROS','Ubuntu', 'Python',],
+    color: 'bg-purple-300',
+    // Add real project screenshots and destinations here as they become available.
+    pictures: [],
+    githubUrl: null,
+    liveUrl: 'https://www.linkedin.com/posts/johan-soto-baron-214230386_ucf-mechanicalengineering-solidworks-ugcPost-7459790785119498240-PfIX/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_86EEBE4Qm2lxlEZ5YDFsyaVqGS-w7azc',
+    details: [
+      'Led the development of a Lidar autonomous driving racing car within a cross-functional team, in which we implemented weekly criticism and direction for faster driving from project stakeholders.',
+      'Engineered C and C++ Firmware for car motors and Python autonomous driving algorithms with real time Lidar data within a Linux, Ubuntu, and ROS environment for a Raspberry Pi on the vehicle.',
+      'Debugged hardware and software issues with oscilloscopes and multimeters, ensuring correct hardware and circuit implementation for car motors, motor controllers, custom PCB, Lidar, and Raspberry Pi.',
+      'Managed project budget through MS Office Excel and project development with Git, GitHub, and MS Office Word, resulting in the lowest budget with a complete project execution for the race competition',
+    ],
+  },
+
   {
     title: 'SEE ME SAFE',
-    category: 'EMBEDDED',
+    category: ['EMBEDDED','AI & SYSTEMS','FULL STACK'],
     date: '24-Hour Hackathon | April 2026',
-    types: ['HARDWsiARE/EMBEDDED', 'C++', 'PYTHON', 'POSTGRESQL', 'REACT'],
+    types: ['HARDWARE', 'EMBEDDED', 'C++', 'ESP32','PYTHON','FLASK','POSTGRESQL', 'REACT','JAVASCRIPT','HTML','CSS'],
     color: 'bg-rose-400',
     pictures: [],
     githubUrl: 'https://github.com/XavierS31/Hackabull1',
     liveUrl: null,
     details: [
-      'Developed an integrated hardware-software safety environment for elderly individuals using C++ microcontrollers and React.',
-      'Architected a real-time video streaming pipeline via Python Flask and PostgreSQL.',
-      'Processed live safety context with Gemini LLM for dynamic hazard detection.',
+      'Developed a hardware-software environment for elder people using React, TypeScript, Python and embedded C++ with the goal of taking care of disabilities, danger scenarios and overall wellness.',
+      'Architected an application video data pipeline using Python Flask RESTful APIs, to store recorded footage on a PostgreSQL database after getting processed by Gemini LLM for more video details.',
+      'Developed a hardware-software environment for elderly people using two ESP32 with I2C, UART, and SPI sensors with Embedded C and C++ firmware in an RTOS environment, tracking their disability issues and reporting their behavior',
+      'Led the development of a group of 4 students during 24 hours, in which we had coding sprints followed by peer reviewand criticism for improvement and debugging using Git and GitHub.',
     ],
   },
   {
     title: 'KNIGHT LIFE',
     category: 'FULL STACK',
     date: 'Knight Hacks Semester Hackathon | Jan 2026 - Apr 2026',
-    types: ['FULL-STACK', 'REACT', 'TYPESCRIPT', 'SQL', 'BEAUTIFULSOUP'],
+    types: ['FULL-STACK', 'REACT', 'TYPESCRIPT', 'SQL','PYTHON','BEAUTIFULSOUP'],
     color: 'bg-cyan-400',
     pictures: [],
-    githubUrl: null,
-    liveUrl: null,
+    githubUrl: 'https://github.com/SimonOcampo/knightlife',
+    liveUrl: 'https://knightlifeucf.vercel.app/',
     details: [
-      'Built an event aggregation ecosystem serving 700+ Registered Student Organizations at UCF.',
-      'Engineered a daily automated web-scraping pipeline using Python BeautifulSoup.',
+      'Built an ecosystem platform for all Registered Social Organizations (RSO) at UCF using React, TypeScript, HTML, CSS resulting in positive peer student and RSO feedback.',
+      'Engineered a daily scraping pipeline for Instagram and Facebook, using Python BeautfulSoup, Saving the RSO’s event and information data through RESTful APIs on a SQL Database.',
       'Stored event data in a SQL database and exposed it through REST APIs.',
+      'Attended Biweekly tracking sessions with project stakeholders to receive direction and feedback in the process of developing our app, resulting in more efficient team merging code processes',
     ],
   },
   {
     title: 'KNIGHT LAB',
     category: 'FULL STACK',
     date: 'March 2026 - April 2026',
-    types: ['WEB PLATFORM', 'TYPESCRIPT', 'EXPRESS', 'MONGODB'],
+    types: ['FULL STACK', 'MOBILE DEV','TYPESCRIPT', 'HTML','CSS','EXPRESS','NoSQL', 'MONGODB'],
     color: 'bg-emerald-400',
     pictures: [],
     githubUrl: 'https://github.com/XavierS31/COP-4331-Large-Project',
     liveUrl: null,
     details: [
-      'Developed a university research-matching platform connecting UCF undergraduates with faculty lab opportunities.',
-      'Secured user access with Express RESTful authentication.',
-      'Designed the platform data layer around a MongoDB architecture.',
+      'Develop university research platform and research jobs using TypeScript, HTML, CSS, React for connecting University of Central Florida (UCF) students with Faculty for Research lab opportunities.',
+      'Protected platform activities only for UCF Students through Express RESTful APIs saving their profiles and actions on a NoSQL MongoDB for anticipated rapid user growth.',
+      'Designed the platform data layer around a NoSQL MongoDB architecture for faculty members postings and jobs and students.',
+      'Protected platform activities only for UCF Students through Express RESTful APIs saving their rofiles and actions on a NoSQL MongoDB for anticipated rapid user growth.',
     ],
   },
   {
     title: 'KNIGHT FINDER',
-    category: 'AI & SYSTEMS',
-    date: '3rd Place @ Knight Hacks | Jan 2026 - Apr 2026',
-    types: ['CHROME EXTENSION', 'RAG AI', 'GEMINI LLM', 'MYSQL'],
+    category: ['AI & SYSTEMS','FULL STACK'],
+    date: '3rd Place @ Knight Hacks Semester long Competition| Jan 2025 - Apr 2025',
+    types: ['CHROME EXTENSION', 'FULL STACK','AGENTIC AI', 'PYTHON','GEMINI LLM', 'MYSQL','JAVASCRIPT','HTML','CSS','TAILWIND CSS'],
     color: 'bg-amber-400',
     pictures: [],
     githubUrl: 'https://github.com/XavierS31/Knight-Finder',
     liveUrl: null,
     details: [
-      'Built a browser extension that helps UCF students navigate university portals and resolve direct queries.',
-      'Implemented a RAG-based AI assistant powered by Gemini LLM and Flask.',
-      'Added MySQL query logging to make support interactions measurable and auditable.',
+      'Developed a chrome extension using JavaScript, HTML, CSS to help students at the University of Central Florida to navigate the student portal with less queries.',
+      'Engineered an AI agent using Gemini LLM through Python and Flask to guide students, saving their queries on a MySQL database, resulting in faster portal activity resulting in faster navigation from 6 to 3 clicks.',
+      'Received monthly team checkpoints with project stakeholders in which they will give us feedback and criticism for better project development and team dynamics.',
     ],
   },
 ]
@@ -89,7 +130,7 @@ const moveSets = [
   { type: 'WATER / GRASS', color: 'bg-cyan-400', title: 'Programming & Cloud', moves: ['Python','Java','React', 'TypeScript', 'JavaScript', 'Next.js','Vite.js', 'Node.js', 'Express', 'HTML','CSS', 'AWS', 'Vercel'] },
   { type: 'STEEL / ELECTRIC', color: 'bg-amber-400', title: 'LOW-LEVEL & SYSTEMS', moves: ['C', 'C++', 'Embedded C++', 'Low-Latency Execution', 'Data Structures & Algorithms', 'Computer Architecture', 'Concurrency', 'Multithreading'] },
   { type: 'PSYCHIC', color: 'bg-purple-300', title: 'AI & MACHINE LEARNING', moves: ['PyTorch','Gemini LLM / Google ADK', 'Multi-Agent Orchestration', 'Scikit-Learn', 'Pandas', 'NumPy','MatPlotLib', 'RAG Architectures'] },
-  { type: 'GROUND / ROCK', color: 'bg-emerald-400', title: 'DATABASES & DEVOPS', moves: ['SQL', 'NoSQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'SupaBase','RESTful APIs', 'Flask', 'GitHub Actions CI/CD', 'AWS'] },
+  { type: 'GROUND / ROCK', color: 'bg-emerald-400', title: 'DATABASES & DEVOPS', moves: ['SQL', 'NoSQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'SupaBase','GIT','RESTful APIs', 'Flask', 'GitHub Actions CI/CD', 'AWS'] },
 ]
 
 const hardButton = 'border-4 border-slate-900 shadow-[4px_4px_0px_0px_#38405f] hover:-translate-y-0.5 active:translate-y-1 active:shadow-none transition-all'
@@ -144,7 +185,7 @@ function TrainerCard() {
             <h1 id="hero-title" className="font-pixel text-3xl leading-[1.35] text-slate-900 sm:text-4xl lg:text-5xl">XAVIER SOTO BARON</h1>
             <p className="mt-5 max-w-3xl border-l-4 border-slate-900 bg-purple-50 px-4 py-3 font-pixel text-sm leading-loose sm:text-base">Software Engineer  |  Embedded Systems  |  Quant Dev  |  AI Engineer</p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="border-4 border-slate-900 bg-sky-100 p-4"><p className="font-pixel text-[11px] text-slate-600">EDUCATION</p><p className="mt-2 font-body text-base font-bold">B.S.  Computer Science<br />University of Central Florida</p></div>
+              <div className="border-4 border-slate-900 bg-sky-100 p-4"><p className="font-pixel text-[11px] text-slate-600">EDUCATION</p><p className="mt-2 font-body text-base font-bold">B.S.  Computer Science<br />University of Central Florida (UCF)</p></div>
               <div className="border-4 border-slate-900 bg-emerald-400 p-4"><p className="font-pixel text-[11px]">NEXT MILESTONE</p><p className="mt-2 font-body text-base font-bold">Graduating<br />Spring 2027</p></div>
               <div className="border-4 border-slate-900 bg-purple-300 p-4"><p className="font-pixel text-[11px]">LANGUAGES</p><p className="mt-2 font-body text-base font-bold">Bilingual<br />English &amp; Spanish</p></div>
               <div className="border-4 border-slate-900 bg-amber-400 p-4"><p className="font-pixel text-[11px]">HONORS</p><p className="mt-2 font-body text-base font-bold">Tau Beta Pi<br />Honor Society Member</p></div>
@@ -168,7 +209,7 @@ function SectionTitle({ children, kicker }) { return <div className="section-tit
 function Profile() {
   return <section id="profile" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8"><SectionTitle kicker="[SECTION 01]">TRAINER SUMMARY</SectionTitle><div className="grid gap-6 lg:grid-cols-2">
     <article className="border-4 border-slate-900 bg-slate-50 p-5 shadow-[6px_6px_0px_0px_#0f172a] sm:p-7"><h3 className="font-pixel text-base leading-loose">WHO IS XAVIER SOTO?</h3><p className="mt-5 font-body text-base leading-7">A multi-disciplinary builder working at the intersection of full-stack development, multi-agent AI orchestration, embedded hardware and firmware, and low-latency algorithmic logic. Xavier turns complex systems into practical tools, whether that means coordinating autonomous agents, shipping polished web products, or optimizing the software that talks directly to hardware.</p><div className="mt-6 grid grid-cols-2 gap-3 font-pixel text-[14px]"><span className="border-2 border-slate-900 bg-cyan-400 p-2">SOFTWARE ENGINEER</span><span className="border-2 border-slate-900 bg-purple-300 p-2">AI ENGINEER</span><span className="border-2 border-slate-900 bg-amber-400 p-2">EMBEDDED</span><span className="border-2 border-slate-900 bg-emerald-400 p-2">QUANT DEV</span></div></article>
-    <article className="border-4 border-slate-900 bg-slate-100 p-5 shadow-[6px_6px_0px_0px_#0f172a] sm:p-7"><h3 className="font-pixel text-base leading-loose">KEY METRICS & ACCOMPLISHMENTS</h3><div className="mt-5 border-4 border-slate-900 bg-amber-400 p-4"><p className="font-pixel text-lg">LEVEL UP!</p><p className="mt-2 font-body font-bold">XP gained through mentorship, leadership, and high-speed prototyping.</p></div><ul className="mt-5 space-y-4 font-body text-base leading-6"><li className="border-l-4 border-cyan-400 pl-3"><strong>UCF Teaching Assistant:</strong> Mentoring 200+ students in Data Structures, Algorithms & OOP (C/Java).</li><li className="border-l-4 border-purple-300 pl-3"><strong>Tau Beta Pi:</strong> Graduate Student Admissions Operations.</li><li className="border-l-4 border-rose-400 pl-3"><strong>Hackathon Champion:</strong> Innovation builder for fast-moving, full-stack teams.</li></ul></article>
+    <article className="relative overflow-hidden border-4 border-slate-900 bg-[#c9515d] p-3 shadow-[6px_6px_0px_0px_#0f172a] sm:p-5" aria-labelledby="badge-case-title"><div className="flex items-center justify-between gap-3 border-b-4 border-slate-900 bg-rose-300 px-3 py-2 font-pixel text-[11px]"><h3 id="badge-case-title">BADGE CASE</h3><span className="bg-slate-900 px-2 py-1 text-[9px] text-slate-50">08 / 08</span></div><div className="mt-4 border-4 border-slate-900 bg-[#2a1e39] p-3 shadow-[inset_4px_4px_0px_0px_#682f4b]"><div className="border-4 border-slate-900 bg-[#f7e7a7] p-3 shadow-[inset_4px_4px_0px_0px_#fffdf3]"><img className="pixel-art w-full bg-[#f7e7a7] object-contain" src={badges} alt="Eight pixel-art achievement badges in Xavier's badge case" /></div></div><div className="mt-4 flex items-center justify-between border-t-4 border-[#682f4b] pt-3 font-pixel text-[9px] text-[#fffdf3]"><span>TRAINER ACHIEVEMENTS</span><span className="text-[#ffe7a9]">CASE: FULL</span></div></article>
   </div></section>
 }
 
@@ -185,12 +226,13 @@ function PokedexCard() {
   const [activeCategory, setActiveCategory] = useState('ALL')
   const [activeTitle, setActiveTitle] = useState(projects[0].title)
   const [isExpanded, setIsExpanded] = useState(false)
-  const filteredProjects = activeCategory === 'ALL' ? projects : projects.filter(project => project.category === activeCategory)
+  const getCategories = project => Array.isArray(project.category) ? project.category : [project.category]
+  const filteredProjects = activeCategory === 'ALL' ? projects : projects.filter(project => getCategories(project).includes(activeCategory))
   const project = filteredProjects.find(item => item.title === activeTitle) ?? filteredProjects[0]
   const projectNumber = projects.findIndex(item => item.title === project.title) + 1
 
   function selectCategory(category) {
-    const nextProjects = category === 'ALL' ? projects : projects.filter(project => project.category === category)
+    const nextProjects = category === 'ALL' ? projects : projects.filter(project => getCategories(project).includes(category))
     setActiveCategory(category)
     setActiveTitle(nextProjects[0].title)
     setIsExpanded(false)
@@ -206,20 +248,20 @@ function PokedexCard() {
       <SectionTitle kicker="[SECTION 04]">PROJECT SHOWCASE</SectionTitle>
       <div className="border-4 border-slate-900 bg-rose-400 p-3 shadow-[8px_8px_0px_0px_#0f172a] sm:p-5">
         <div className="mb-5 border-4 border-slate-900 bg-slate-50 p-3">
-          <p className="font-pixel text-[9px] text-slate-600">FILTER BY CATEGORY</p>
+          <p className="font-pixel text-[10px] text-slate-600">FILTER BY CATEGORY</p>
           <div className="mt-3 flex flex-wrap gap-2">
-            {projectCategories.map(category => <button key={category} onClick={() => selectCategory(category)} aria-pressed={activeCategory === category} className={`${hardButton} px-3 py-2 font-pixel text-[8px] ${activeCategory === category ? 'bg-slate-900 text-slate-50' : 'bg-sky-100 text-slate-900'}`}>{category}</button>)}
+            {projectCategories.map(category => <button key={category} onClick={() => selectCategory(category)} aria-pressed={activeCategory === category} className={`${hardButton} px-3 py-2 font-pixel text-[10px] ${activeCategory === category ? 'bg-slate-900 text-slate-50' : 'bg-sky-100 text-slate-900'}`}>{category}</button>)}
           </div>
         </div>
         <div className="grid gap-5 lg:grid-cols-[230px_1fr]">
           <nav className="project-selector grid grid-cols-2 gap-2 lg:grid-cols-1" aria-label="Project selector">
-            {filteredProjects.map(item => <button key={item.title} onClick={() => selectProject(item.title)} aria-current={project.title === item.title ? 'true' : undefined} className={`${hardButton} min-h-14 px-3 py-3 text-left font-pixel text-[9px] ${project.title === item.title ? 'bg-slate-900 text-slate-50' : 'bg-slate-50 text-slate-900'}`}><span className="mr-2 text-amber-400">{String(projects.findIndex(project => project.title === item.title) + 1).padStart(2, '0')}</span>{item.title}</button>)}
+            {filteredProjects.map(item => <button key={item.title} onClick={() => selectProject(item.title)} aria-current={project.title === item.title ? 'true' : undefined} className={`${hardButton} min-h-14 px-3 py-3 text-left font-pixel text-[11px] ${project.title === item.title ? 'bg-slate-900 text-slate-50' : 'bg-slate-50 text-slate-900'}`}><span className="mr-2 text-amber-400">{String(projects.findIndex(project => project.title === item.title) + 1).padStart(2, '0')}</span>{item.title}</button>)}
           </nav>
           <article id="project-details" className={`${isExpanded ? 'min-h-[590px] sm:p-8' : 'min-h-[375px]'} border-4 border-slate-900 bg-slate-50 p-5 transition-[min-height,padding] duration-300 sm:p-7`}>
-            <div className="flex flex-wrap items-start justify-between gap-4 border-b-4 border-slate-900 pb-5"><div><p className="font-pixel text-[9px] text-slate-600">ENTRY_{String(projectNumber).padStart(3, '0')} | {project.category}</p>{project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-2 font-pixel text-2xl leading-relaxed underline decoration-4 underline-offset-4 transition-colors hover:text-[#505775] focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-slate-900 sm:text-3xl">{project.title}<span aria-hidden="true">↗</span></a> : <h3 className="mt-2 font-pixel text-2xl leading-relaxed sm:text-3xl">{project.title}</h3>}<p className="mt-2 font-body font-bold">{project.date}</p></div><div className="pokedex-orb shrink-0" aria-hidden="true" /></div>
+            <div className="flex flex-wrap items-start justify-between gap-4 border-b-4 border-slate-900 pb-5"><div><div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-pixel text-[9px] text-slate-600"><span>ENTRY_{String(projectNumber).padStart(3, '0')}</span>{getCategories(project).map(category => <span key={category}>| {category}</span>)}</div>{project.liveUrl ? <a href={project.liveUrl} target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center gap-2 font-pixel text-2xl leading-relaxed underline decoration-4 underline-offset-4 transition-colors hover:text-[#505775] focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-slate-900 sm:text-3xl">{project.title}<span aria-hidden="true">↗</span></a> : <h3 className="mt-2 font-pixel text-2xl leading-relaxed sm:text-3xl">{project.title}</h3>}<p className="mt-2 font-body font-bold">{project.date}</p></div><div className="pokedex-orb shrink-0" aria-hidden="true" /></div>
             <div className="mt-5 flex flex-wrap gap-2">{project.types.map(type => <span key={type} className={`border-2 border-slate-900 ${project.color} px-2 py-1 font-pixel text-[11px]`}>{type}</span>)}</div>
             <ul className="mt-7 space-y-4 font-body text-base leading-7">{project.details.map(detail => <li key={detail} className="flex gap-3"><span className="mt-2 h-3 w-3 shrink-0 border-2 border-slate-900 bg-slate-900" />{detail}</li>)}</ul>
-            <div className="mt-7 flex flex-wrap gap-3 border-t-4 border-slate-900 pt-5"><button type="button" onClick={() => setIsExpanded(expanded => !expanded)} aria-expanded={isExpanded} aria-controls="project-media" className={`${hardButton} bg-amber-400 px-4 py-3 font-pixel text-[10px] text-slate-900`}>{isExpanded ? 'CLOSE DETAILS' : 'READ MORE'}</button>{project.githubUrl ? <a className={`${hardButton} bg-slate-900 px-4 py-3 font-pixel text-[10px] text-slate-50`} href={project.githubUrl} target="_blank" rel="noreferrer">GITHUB</a> : <span className="border-4 border-slate-900 bg-slate-100 px-4 py-3 font-pixel text-[10px] text-slate-600" title="Add a githubUrl to this project to enable the repository link" aria-disabled="true">GITHUB LINK PENDING</span>}</div>
+            <div className="mt-7 flex flex-wrap gap-3 border-t-4 border-slate-900 pt-5"><button type="button" onClick={() => setIsExpanded(expanded => !expanded)} aria-expanded={isExpanded} aria-controls="project-media" className={`${hardButton} bg-amber-400 px-4 py-3 font-pixel text-[10px] text-slate-900`}>{isExpanded ? 'CLOSE DETAILS' : 'SEE IMAGES'}</button>{project.githubUrl ? <a className={`${hardButton} bg-slate-900 px-4 py-3 font-pixel text-[10px] text-slate-50`} href={project.githubUrl} target="_blank" rel="noreferrer">GITHUB</a> : <span className="border-4 border-slate-900 bg-slate-100 px-4 py-3 font-pixel text-[10px] text-slate-600" title="Add a githubUrl to this project to enable the repository link" aria-disabled="true">GITHUB LINK PENDING</span>}</div>
             {isExpanded && <div id="project-media" className="mt-7 border-t-4 border-slate-900 pt-6"><p className="font-pixel text-[10px] text-slate-600">PROJECT GALLERY</p>{project.pictures.length ? <div className="mt-4 grid gap-4 sm:grid-cols-2">{project.pictures.map((picture, index) => <figure key={`${picture.src}-${index}`} className="overflow-hidden border-4 border-slate-900 bg-slate-100"><img className="aspect-[16/10] w-full object-cover" src={picture.src} alt={picture.alt} /><figcaption className="border-t-2 border-slate-900 bg-slate-50 px-3 py-2 font-body text-sm font-bold">{picture.caption}</figcaption></figure>)}</div> : <p className="mt-4 border-2 border-dashed border-slate-900 bg-sky-100 p-4 font-body text-sm leading-6">Screenshots will appear here when picture objects are added to this project.</p>}</div>}
           </article>
         </div>
@@ -240,7 +282,7 @@ function CourseQuestLog() {
 }
 
 function Footer() {
-  return <footer id="contact" className="mt-14 border-t-4 border-slate-900 bg-slate-900 px-4 py-14 text-slate-50 sm:px-6 lg:px-8"><div className="mx-auto max-w-7xl"><div className="border-4 border-slate-50 bg-slate-800 p-5 shadow-[6px_6px_0px_0px_#f8fafc] sm:p-8"><p className="max-w-4xl font-pixel text-base leading-loose sm:text-xl">LET'S BUILD SOMETHING USEFUL.</p><div className="mt-7 flex flex-wrap gap-4"><a className={`${hardButton} bg-amber-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="mailto:xaviersotoba31@gmail.com">SEND MESSAGE</a><a className={`${hardButton} bg-cyan-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="/Xavier-Soto-Baron-Resume.pdf" target="_blank" rel="noreferrer">VIEW RESUME</a><a className={`${hardButton} bg-purple-300 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://linkedin.com/in/xavier-soto-baron" target="_blank" rel="noreferrer">LINKEDIN</a><a className={`${hardButton} bg-emerald-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://github.com/XavierS31" target="_blank" rel="noreferrer">GITHUB</a></div></div><p className="mt-10 text-center font-pixel text-[8px] leading-loose text-slate-300">@XavierS31 | ALL RIGHTS RESERVED</p></div></footer>
+  return <footer id="contact" className="mt-14 border-t-4 border-slate-900 bg-slate-900 px-4 py-14 text-slate-50 sm:px-6 lg:px-8"><div className="mx-auto max-w-7xl"><div className="border-4 border-slate-50 bg-slate-800 p-5 shadow-[6px_6px_0px_0px_#f8fafc] sm:p-8"><p className="max-w-4xl font-pixel text-base leading-loose sm:text-xl">LET'S BUILD SOMETHING TOGETHER.</p><div className="mt-7 flex flex-wrap gap-4"><a className={`${hardButton} bg-amber-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="mailto:xaviersotoba31@gmail.com">SEND MESSAGE</a><a className={`${hardButton} bg-cyan-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="/Xavier-Soto-Baron-Resume.pdf" target="_blank" rel="noreferrer">VIEW RESUME</a><a className={`${hardButton} bg-purple-300 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://linkedin.com/in/xavier-soto-baron" target="_blank" rel="noreferrer">LINKEDIN</a><a className={`${hardButton} bg-emerald-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://github.com/XavierS31" target="_blank" rel="noreferrer">GITHUB</a></div></div><p className="mt-10 text-center font-pixel text-[8px] leading-loose text-slate-300">@XavierS31 | ALL RIGHTS RESERVED</p></div></footer>
 }
 
 function PixelSkyline() {
@@ -260,7 +302,7 @@ function PixelSkyline() {
 }
 
 function App() {
-  return <main className="city-main min-h-screen overflow-x-hidden text-slate-900"><PixelSkyline /><div className="site-content relative z-10"><header className="border-b-4 border-slate-900 bg-slate-50"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 font-pixel text-[14px] sm:px-6 lg:px-8"><span className="border-2 border-slate-900 bg-purple-300 px-2 py-1.5">Xavier's Portfolio</span><span>LVL 2027 <i className="mx-2 not-italic text-amber-500">|</i> ORLANDO, FL</span></div></header><TrainerCard /><Profile /><CoursePokedex /><PokedexCard /><MoveSet /><CourseQuestLog /><Footer /></div></main>
+  return <main className="city-main min-h-screen overflow-x-hidden text-slate-900"><PixelSkyline /><div className="site-content relative z-10"><header className="border-b-4 border-slate-900 bg-slate-50"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 font-pixel text-[16px] sm:px-6 lg:px-8"><div className="flex items-center gap-2"><span className="border-2 border-slate-900 bg-purple-300 px-2 py-1.5">Xavier's Portfolio</span><img className="h-10 w-36 object-contain" src={pokeballs} alt="Poké Balls" /></div><span>LVL 2027 <i className="mx-2 not-italic text-amber-500">|</i> ORLANDO, FL</span></div></header><TrainerCard /><Profile /><CoursePokedex /><PokedexCard /><MoveSet /><Footer /></div></main>
 }
 
 export default App
