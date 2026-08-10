@@ -5,16 +5,16 @@ import { experienceEntries } from './portfolioEntries'
 import { ExperienceMap, PokedexSprite, PokeballMark } from './UIComponents'
 import decidueye from './pokedex/decidueye-cutout.png'
 import gardevoir from './pokedex/gardevoir-cutout.png'
-import lugia from './pokedex/lugia.png'
+import lugia from './pokedex/lucario.png'
 import metagross from './pokedex/metagross-cutout.png'
 import rayquaza from './pokedex/rayquaza-cutout.png'
 import sceptile from './pokedex/sceptile-cutout.png'
 
 const experienceSprites = [
   { src: sceptile, name: 'Sceptile' },
-  { src: rayquaza, name: 'Rayquaza', className: 'course-sprite-rayquaza' },
+  { src: rayquaza, name: 'Rayquaza' },
   { src: gardevoir, name: 'Gardevoir' },
-  { src: metagross, name: 'Metagross', className: 'course-sprite-metagross' },
+  { src: metagross, name: 'Metagross' },
   { src: lugia, name: 'Lugia' },
   { src: decidueye, name: 'Decidueye' },
 ]
@@ -30,9 +30,9 @@ export default function CoursePokedex() {
   usePokedexNavigation({ previousEntry, nextEntry })
 
   return (
-    <section id="experience-pokedex" className="course-pokedex-section mx-auto w-full max-w-[92rem] px-4 py-12 sm:px-6 lg:px-8" aria-labelledby="experience-pokedex-title">
+    <section id="experience-pokedex" className="course-pokedex-section mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8" aria-labelledby="experience-pokedex-title">
       <div className="section-title mb-7 flex flex-wrap items-end justify-between gap-3">
-        <div><p className="font-pixel text-[12px] text-slate-600">[SECTION 05]</p><h2 id="experience-pokedex-title" className="mt-2 font-pixel text-3xl leading-relaxed sm:text-4xl">EXPERIENCE POKÉDEX</h2></div>
+        <div><p className="font-pixel text-[12px] text-slate-600">[SECTION 02]</p><h2 id="experience-pokedex-title" className="mt-2 font-pixel text-3xl leading-relaxed sm:text-4xl">EXPERIENCE POKÉDEX</h2></div>
         <span className="hidden h-3 w-24 border-2 border-slate-900 bg-rose-400 sm:block" />
       </div>
       <RenderEngine>
@@ -45,9 +45,9 @@ export default function CoursePokedex() {
               <div className="course-stats-panel">
                 <div className="course-type-row">{experience.types.map(type => <span key={type}>{type}</span>)}</div>
                 <dl>
-                  <div><dt>TERM:</dt><dd>{experience.duration}</dd></div>
-                  <div><dt>BASE:</dt><dd>{experience.location}</dd></div>
-                  <div><dt>ROLE:</dt><dd>{experience.organization}</dd></div>
+                  <div><dt>DURATION:</dt><dd>{experience.duration}</dd></div>
+                  <div><dt>LOCATION:</dt><dd>{experience.location}</dd></div>
+                  <div><dt>COMPANY:</dt><dd>{experience.organization}</dd></div>
                 </dl>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function CoursePokedex() {
                   aria-current={activeIndex === index ? 'true' : undefined}
                   className={activeIndex === index ? 'is-active' : ''}
                 >
-                  <span>{entry.number}</span><strong>{entry.title}</strong>
+                  <span>{entry.number}</span><strong><span>{entry.title}</span><span>@ {entry.organization}</span></strong>
                 </button>
               ))}
             </nav>
