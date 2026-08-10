@@ -23,6 +23,7 @@ export default function CoursePokedex() {
   const [activeIndex, setActiveIndex] = useState(0)
   const experience = experienceEntries[activeIndex]
   const sprite = experienceSprites[activeIndex]
+  const descriptionPoints = experience.description.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map(point => point.trim()).filter(Boolean) ?? []
 
   const previousEntry = useCallback(() => setActiveIndex(index => (index - 1 + experienceEntries.length) % experienceEntries.length), [])
   const nextEntry = useCallback(() => setActiveIndex(index => (index + 1) % experienceEntries.length), [])
@@ -51,7 +52,7 @@ export default function CoursePokedex() {
                 </dl>
               </div>
             </div>
-            <p className="course-description">{experience.description}</p>
+            <ul className="course-description">{descriptionPoints.map((point, index) => <li key={`${experience.number}-${index}`}>{point}</li>)}</ul>
             <footer className="course-screen-footer">PRESS <button type="button" onClick={nextEntry} className="course-a-button" aria-label={`Show next experience after ${experience.title}`}>A</button> FOR NEXT EXPERIENCE / PAGE {activeIndex + 1}</footer>
           </article>
           <aside className="course-side-panel" aria-label="Experience navigation panel">

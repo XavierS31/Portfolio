@@ -11,11 +11,11 @@ const projects = [
     title: 'HERMES',
     category: 'AI & SYSTEMS',
     date: '24-Hour Hackathon | March 2026',
-    types: ['AI','Python','Flask','Gemini LLM','Google ADK',  'React','JavaScript', 'HTML', 'CSS',],
+    types: ['AI','Python','Flask','Gemini LLM','Google ADK', 'React','JavaScript', 'HTML', 'CSS',],
     color: 'bg-purple-300',
     // Add real project screenshots and destinations here as they become available.
     pictures: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/XavierS31/hermes',
     liveUrl: null,
     details: [
       'Engineered a hurricane simulation and evacuation testing platform for Tampa Bay using React and Python.',
@@ -24,13 +24,13 @@ const projects = [
     ],
   },
   {
-    title: 'SEEME SAFE',
+    title: 'SEE ME SAFE',
     category: 'EMBEDDED',
     date: '24-Hour Hackathon | April 2026',
     types: ['HARDWsiARE/EMBEDDED', 'C++', 'PYTHON', 'POSTGRESQL', 'REACT'],
     color: 'bg-rose-400',
     pictures: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/XavierS31/Hackabull1',
     liveUrl: null,
     details: [
       'Developed an integrated hardware-software safety environment for elderly individuals using C++ microcontrollers and React.',
@@ -60,7 +60,7 @@ const projects = [
     types: ['WEB PLATFORM', 'TYPESCRIPT', 'EXPRESS', 'MONGODB'],
     color: 'bg-emerald-400',
     pictures: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/XavierS31/COP-4331-Large-Project',
     liveUrl: null,
     details: [
       'Developed a university research-matching platform connecting UCF undergraduates with faculty lab opportunities.',
@@ -75,7 +75,7 @@ const projects = [
     types: ['CHROME EXTENSION', 'RAG AI', 'GEMINI LLM', 'MYSQL'],
     color: 'bg-amber-400',
     pictures: [],
-    githubUrl: null,
+    githubUrl: 'https://github.com/XavierS31/Knight-Finder',
     liveUrl: null,
     details: [
       'Built a browser extension that helps UCF students navigate university portals and resolve direct queries.',
@@ -146,6 +146,8 @@ function TrainerCard() {
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <div className="border-4 border-slate-900 bg-sky-100 p-4"><p className="font-pixel text-[11px] text-slate-600">EDUCATION</p><p className="mt-2 font-body text-base font-bold">B.S.  Computer Science<br />University of Central Florida</p></div>
               <div className="border-4 border-slate-900 bg-emerald-400 p-4"><p className="font-pixel text-[11px]">NEXT MILESTONE</p><p className="mt-2 font-body text-base font-bold">Graduating<br />Spring 2027</p></div>
+              <div className="border-4 border-slate-900 bg-purple-300 p-4"><p className="font-pixel text-[11px]">LANGUAGES</p><p className="mt-2 font-body text-base font-bold">Bilingual<br />English &amp; Spanish</p></div>
+              <div className="border-4 border-slate-900 bg-amber-400 p-4"><p className="font-pixel text-[11px]">HONORS</p><p className="mt-2 font-body text-base font-bold">Tau Beta Pi<br />Honor Society Member</p></div>
             </div>
 
           </div>
