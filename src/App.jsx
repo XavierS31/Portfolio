@@ -7,6 +7,7 @@ import pokeballs from './assets/pokeballs.jpg'
 import badges from './assets/badges.jpg'
 import CoursePokedex from './CoursePokedex'
 import { courseCatalog } from './portfolioEntries'
+import resumePdf from './XavierSotoBaronResume.pdf'
 
 const projects = [
   {
@@ -162,8 +163,8 @@ function PokemonParty() {
   </aside>
 }
 
-function ContactLink({ label, value, href, tint = 'bg-slate-50' }) {
-  return <a className={`${hardButton} ${tint} flex min-w-0 items-center gap-2 px-3 py-3 font-pixel text-[9px] leading-relaxed`} href={href}><span className="shrink-0 text-slate-900">{label}</span><span className="truncate font-body text-sm font-bold">{value}</span></a>
+function ContactLink({ label, value, href, tint = 'bg-slate-50', ...props }) {
+  return <a className={`${hardButton} ${tint} flex min-w-0 items-center gap-2 px-3 py-3 font-pixel text-[9px] leading-relaxed`} href={href} {...props}><span className="shrink-0 text-slate-900">{label}</span><span className="truncate font-body text-sm font-bold">{value}</span></a>
 }
 
 function CornerBalls() {
@@ -196,7 +197,7 @@ function TrainerCard() {
             <ContactLink label="EMAIL" value="xaviersotoba31@gmail.com" href="mailto:xaviersotoba31@gmail.com" tint="bg-amber-400" />
             <ContactLink label="LINKEDIN" value="linkedin.com/in/xavier-soto-baron" href="https://linkedin.com/in/xavier-soto-baron" tint="bg-cyan-400" />
             <ContactLink label="GITHUB" value="github.com/XavierS31" href="https://github.com/XavierS31" tint="bg-emerald-400" />
-            <ContactLink label="RESUME" value="View Resume" href="/Xavier-Soto-Baron-Resume.pdf" target="_blank" rel="noreferrer" tint="bg-purple-300" />
+            <ContactLink label="RESUME" value="View Resume" href={resumePdf} target="_blank" rel="noreferrer" tint="bg-purple-300" />
           </div>
         </div>
       </div>
@@ -282,7 +283,7 @@ function CourseQuestLog() {
 }
 
 function Footer() {
-  return <footer id="contact" className="mt-14 border-t-4 border-slate-900 bg-slate-900 px-4 py-14 text-slate-50 sm:px-6 lg:px-8"><div className="mx-auto max-w-7xl"><div className="border-4 border-slate-50 bg-slate-800 p-5 shadow-[6px_6px_0px_0px_#f8fafc] sm:p-8"><p className="max-w-4xl font-pixel text-base leading-loose sm:text-xl">LET'S BUILD SOMETHING TOGETHER.</p><div className="mt-7 flex flex-wrap gap-4"><a className={`${hardButton} bg-amber-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="mailto:xaviersotoba31@gmail.com">SEND MESSAGE</a><a className={`${hardButton} bg-cyan-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="/Xavier-Soto-Baron-Resume.pdf" target="_blank" rel="noreferrer">VIEW RESUME</a><a className={`${hardButton} bg-purple-300 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://linkedin.com/in/xavier-soto-baron" target="_blank" rel="noreferrer">LINKEDIN</a><a className={`${hardButton} bg-emerald-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://github.com/XavierS31" target="_blank" rel="noreferrer">GITHUB</a></div></div><p className="mt-10 text-center font-pixel text-[8px] leading-loose text-slate-300">@XavierS31 | ALL RIGHTS RESERVED</p></div></footer>
+  return <footer id="contact" className="mt-14 border-t-4 border-slate-900 bg-slate-900 px-4 py-14 text-slate-50 sm:px-6 lg:px-8"><div className="mx-auto max-w-7xl"><div className="border-4 border-slate-50 bg-slate-800 p-5 shadow-[6px_6px_0px_0px_#f8fafc] sm:p-8"><p className="max-w-4xl font-pixel text-base leading-loose sm:text-xl">LET'S BUILD SOMETHING TOGETHER.</p><div className="mt-7 flex flex-wrap gap-4"><a className={`${hardButton} bg-amber-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="mailto:xaviersotoba31@gmail.com">SEND MESSAGE</a><a className={`${hardButton} bg-cyan-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href={resumePdf} target="_blank" rel="noreferrer">VIEW RESUME</a><a className={`${hardButton} bg-purple-300 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://linkedin.com/in/xavier-soto-baron" target="_blank" rel="noreferrer">LINKEDIN</a><a className={`${hardButton} bg-emerald-400 px-4 py-3 font-pixel text-[10px] text-slate-900`} href="https://github.com/XavierS31" target="_blank" rel="noreferrer">GITHUB</a></div></div><p className="mt-10 text-center font-pixel text-[8px] leading-loose text-slate-300">@XavierS31 | ALL RIGHTS RESERVED</p></div></footer>
 }
 
 function PixelSkyline() {
