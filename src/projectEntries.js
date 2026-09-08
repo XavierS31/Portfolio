@@ -17,7 +17,7 @@ export const projects = [
   {
     title: 'POWERTRAIN',
     category: ['EMBEDDED','AI & SYSTEMS'],
-    purpose: 'UCF SHPE FALL 2026 COMPETITION — 1ST PLACE',
+    purpose: 'UCF SHPE FALL 2026 COMPETITION — 1ST PLACE POSITION',
     date: 'AUGUST 2025 – NOVEMBER 2025',
     types: ['EMBEDDED', 'HARDWARE','C++','ESP32', 'PYTHON','PYTORCH','PANDAS','SENSORS', 'SOLDERING'],
     color: 'bg-emerald-400',
@@ -35,7 +35,7 @@ export const projects = [
   {
     title: 'HERMES',
     category: ['AI & SYSTEMS','FULL STACK'],
-    purpose: '24-HOUR HACKATHON',
+    purpose: 'HACKUSF 2026 24-HOUR HACKATHON',
     date: 'MARCH 2026',
     types: ['AI','Python','Flask','Gemini LLM','Google ADK', 'React','JavaScript', 'HTML', 'CSS',],
     color: 'bg-purple-300',
@@ -53,7 +53,7 @@ export const projects = [
   {
     title: 'SCUDERIA SHPE',
     category: ['EMBEDDED','AI & SYSTEMS'],
-    purpose: 'UCF AI RACER GRAND PRIX — 1ST PLACE',
+    purpose: 'UCF FIRST AI RACER GRAND PRIX 2026',
     date: 'JANUARY 2026 – APRIL 2026',
     types: ['Lidar','Embedded','Hardware','Raspberry Pi','C++','Linux', 'ROS','Ubuntu', 'Python',],
     color: 'bg-purple-300',
@@ -72,7 +72,7 @@ export const projects = [
   {
     title: 'SEE ME SAFE',
     category: ['EMBEDDED','AI & SYSTEMS','FULL STACK'],
-    purpose: '24-HOUR HACKATHON',
+    purpose: 'HACKABULL 2026 24-HOUR HACKATHON',
     date: 'APRIL 2026',
     types: ['HARDWARE', 'EMBEDDED', 'C++', 'ESP32','PYTHON','FLASK','POSTGRESQL', 'REACT','JAVASCRIPT','HTML','CSS'],
     color: 'bg-rose-400',
@@ -89,7 +89,7 @@ export const projects = [
   {
     title: 'KNIGHT LIFE',
     category: 'FULL STACK',
-    purpose: 'KNIGHT HACKS SEMESTER HACKATHON',
+    purpose: 'KNIGHT HACKS SPRING SEMESTER 2026 PROJECT LAUNCH',
     date: 'JANUARY 2026 – APRIL 2026',
     types: ['FULL-STACK', 'REACT', 'TYPESCRIPT', 'SQL','PYTHON','BEAUTIFULSOUP'],
     color: 'bg-cyan-400',
@@ -106,7 +106,7 @@ export const projects = [
   {
     title: 'KNIGHT LAB',
     category: 'FULL STACK',
-    purpose: 'UCF RESEARCH OPPORTUNITY PLATFORM',
+    purpose: '',
     date: 'MARCH 2026 – APRIL 2026',
     types: ['FULL STACK', 'MOBILE DEV','TYPESCRIPT', 'HTML','CSS','EXPRESS','NoSQL', 'MONGODB'],
     color: 'bg-emerald-400',
@@ -123,7 +123,7 @@ export const projects = [
   {
     title: 'LEARNWORLD',
     category: ['FULL STACK','AI & SYSTEMS'],
-    purpose: 'KNIGHTHACKS SUMMER HACKATHON',
+    purpose: 'KNIGHTHACKS SUMMER 2026HACKATHON',
     date: 'SUMMER 2026',
     types: ['FULL STACK','GEMINI LLM', 'MYSQL','REACT','NEXT.JS','TYPESCRIPT','HTML','CSS','TAILWIND CSS'],
     color: 'bg-CYAN-400',
@@ -139,7 +139,7 @@ export const projects = [
   {
     title: 'KNIGHTHAVEN',
     category: ['FULL STACK'],
-    purpose: 'KNIGHTHACKS FALL HACKATHON',
+    purpose: 'KNIGHTHACKS FALL 2025 HACKATHON',
     date: 'OCTOBER 2025',
     types: ['FULL STACK', 'PYTHON', 'SQLite','REACT','TYPESCRIPT','JAVASCRIPT','HTML','CSS','TAILWIND CSS','BeautifulSoup'],
     color: 'bg-ROSE-400',
